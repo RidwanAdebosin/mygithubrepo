@@ -23,7 +23,6 @@ const Error404 = () => {
         <h5>Contact Elon Musk for help &#128514;</h5>
         <div className="error">
           <img src={ErrorImg} alt="" />
-
           <div className="error-btn">
             <Link to="/" className="btn">
               Back to home

@@ -6,11 +6,14 @@ import SingleRepo from "./components/SingleRepo";
 import Error404 from "./pages/Error404";
 import ErrorBoundary from "./pages/ErrorBoundary";
 import TestError from "./components/TestError";
+import Navigation from "./components/Navigation";
+import "../src/styles/navigation.css";
 import "./App.css";
 
 const App = () => {
   return (
     <ErrorBoundary>
+      <Navigation />
       <Routes className="main-container">
         <Route path="/" element={<Home />} />
         <Route path="/repos" element={<Repositories />} />
