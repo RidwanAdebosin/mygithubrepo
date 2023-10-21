@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/home.css";
+import styles from "../styles/home.css";
 
 const ProfileCard = () => {
   return (
@@ -23,6 +23,15 @@ const Home = () => {
         </div>
         <div className="home-details">
           <p>Name: Ridwan Adebosin</p>
+          <p>
+            <a
+              href="https://github.com/RidwanAdebosin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @RidwanAdebosin
+            </a>
+          </p>
         </div>
       </section>
     </>
