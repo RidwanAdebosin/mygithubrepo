@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const Error404 = () => {
   return (
     <>
-      <Navigation />
       <div className="wrapper ">
         <Helmet>
           <title>Error Page</title>

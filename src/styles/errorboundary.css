@@ -1,8 +1,23 @@
-/* .error-boundary-container {
+.error-boundary-container {
   border: 1px solid #dcc;
   border-radius: 5px;
   margin: 0 auto;
   width: fit-content;
   text-align: center;
   padding-bottom: 20px;
-} */
+}
+
+.error-btn {
+  background-color: palevioletred;
+}
+
+.btn-error-boundary {
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  margin-block-start: 100px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}

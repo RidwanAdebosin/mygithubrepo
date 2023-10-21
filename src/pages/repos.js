@@ -55,12 +55,8 @@ const Repositories = () => {
         />
         <link rel="canonical" href="/repos" />
       </Helmet>
-      {/* <section className="repos-container"> */}
 
-      {/* </section> */}
-      <Navigation />
       <section className="repos-container">
-        {/* <SingleRepo /> */}
         {loading ? (
           <img src={LoadingIcon} alt="" />
         ) : (

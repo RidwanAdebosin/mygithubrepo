@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../styles/errorboundary.css";
 
 const refreshPage = () => {
   window.location.reload(false);
