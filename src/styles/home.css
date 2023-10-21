@@ -1,0 +1,13 @@
+.home-container {
+  border: 1px solid #dcc;
+  margin-block-start: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  /* width: fit-content; */
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
