@@ -3,6 +3,7 @@
   border: 1px solid #dcc;
   border-radius: 5px;
   margin: 0 auto;
+  height: 100vh;
   text-align: center;
   padding-bottom: 20px;
   background-color: rgb(226, 219, 219);
@@ -16,6 +17,23 @@
   margin-block-start: 75px;
 }
 
-.profiles {
-  display: flex;
+.each_repo {
+  max-width: 900px;
+  /* border: 1px solid salmon; */
+  display: inline-grid;
+  grid-template-columns: 300px 300px;
+  gap: 20rem;
+  padding: 10rem;
+}
+
+.home-cont {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px;
+}
+
+.home-cont:h {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px;
 }

@@ -56,23 +56,20 @@ const Repositories = () => {
         <link rel="canonical" href="/repos" />
       </Helmet>
 
-      <section className="repos-container">
+      <div className="repos-container">
         {loading ? (
           <img src={LoadingIcon} alt="" />
         ) : (
           <div>
-            <h1 className="title">Ridwan Adebosin's GitHub Repos</h1>
+            <h1 className="title">Ridwan Adebosin's GitHub Repositories</h1>
 
             <p className="pages">
               Page {page} of [{totalPages}]
             </p>
             <hr />
-            <Profiles
-              repos={repos}
-              page={page}
-              id={repos.name}
-              className="profiles"
-            />
+            <div className="each_repo">
+              <Profiles repos={repos} page={page} id={repos.name} />
+            </div>
           </div>
         )}
         <Pagination
@@ -83,7 +80,7 @@ const Repositories = () => {
           disabledPrev={page <= 1}
           disabledNext={page >= totalPages}
         />
-      </section>
+      </div>
       <Link to="/" className="btn">
         Back to home
       </Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/home.css";
 
 const ProfileCard = () => {
   return (
@@ -15,7 +16,7 @@ const ProfileCard = () => {
 const Home = () => {
   return (
     <>
-      <section className="home-container">
+      <div className="home-container">
         <div className="profile-block">
           <h1>Welcome, adebosinadewale@gmail.com</h1>
           <ProfileCard />
@@ -32,7 +33,7 @@ const Home = () => {
             </a>
           </p>
         </div>
-      </section>
+      </div>
     </>
   );
 };
