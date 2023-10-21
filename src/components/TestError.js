@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/errorboundary.css";
-import Navigation from "./Navigation";
 
 const TestError = () => {
   const [error, setError] = useState(false);

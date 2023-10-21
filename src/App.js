@@ -1,4 +1,4 @@
-import { Routes, Route, Navlink, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home";
 import Repositories from "./pages/repos";
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/repos" element={<Repositories />} />
         <Route path="/repos/:userId" element={<SingleRepo />} />
         <Route path="/error404" element={<Error404 />} />
-        {/* <Route path="/errorboundary" element={<ErrorBoundary />} /> */}
+
         <Route path="/testerror" element={<TestError />} />
       </Routes>
     </ErrorBoundary>

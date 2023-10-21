@@ -9,8 +9,6 @@ const SingleRepo = () => {
   const { userId } = useParams();
 
   useEffect(() => {
-    //github repositories API
-    // const URL = "https://api.github.com/users/RidwanAdebosin/repos";
     const URL = `https://api.github.com/repos/RidwanAdebosin/${userId}`;
     const fetchUsers = async () => {
       setLoading(true);

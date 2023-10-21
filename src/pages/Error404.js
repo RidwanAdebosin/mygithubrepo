@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/error404.css";
-import Navigation from "../components/Navigation";
 import ErrorImg from "../assets/images/errorImg.jpeg";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";

@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/repos.css";
 import { useState, useEffect } from "react";
-import Navigation from "../components/Navigation";
+
 import LoadingIcon from "../assets/images/Loading_icon.gif";
 import { Link } from "react-router-dom";
-import SingleRepo from "../components/SingleRepo";
+
 import Profiles from "../components/Profile";
 import Pagination from "../components/Pagination";
 import { Helmet } from "react-helmet";
