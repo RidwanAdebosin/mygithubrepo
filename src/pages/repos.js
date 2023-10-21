@@ -67,7 +67,12 @@ const Repositories = () => {
               Page {page} of [{totalPages}]
             </p>
             <hr />
-            <Profiles repos={repos} page={page} id={repos.name} />
+            <Profiles
+              repos={repos}
+              page={page}
+              id={repos.name}
+              className="profiles"
+            />
           </div>
         )}
         <Pagination
