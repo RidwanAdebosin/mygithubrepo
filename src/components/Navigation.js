@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Nav from "../assets/images/extras/ShortNav";
 import React, { useState } from "react";
 import "../styles/navigation.css";
 import { FaBars, FaTimes } from "react-icons/fa";
