@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./pages/home";
 import Repositories from "./pages/repos";
-import SingleRepo from "./components/SingleRepo";
+import SingleRepo from "./pages/SingleRepo";
 import Error404 from "./pages/Error404";
 import ErrorBoundary from "./pages/ErrorBoundary";
 import TestError from "./components/TestError";

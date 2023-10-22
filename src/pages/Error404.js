@@ -16,11 +16,13 @@ const Error404 = () => {
           />
           <link rel="canonical" href="/error" />
         </Helmet>
+        <div className="error-container">
+          <h2>Error 404: Contact Page Not Found!</h2>
+          <h5>Who send you come no give you map? &#128514;</h5>
+          <div className="error">
+            <img src={ErrorImg} alt="" className="errorimg" />
+          </div>
 
-        <h2>Error 404: Contact Page Not Found!</h2>
-        <h5>Contact Elon Musk for help &#128514;</h5>
-        <div className="error">
-          <img src={ErrorImg} alt="" />
           <div className="error-btn">
             <Link to="/" className="btn">
               Back to home

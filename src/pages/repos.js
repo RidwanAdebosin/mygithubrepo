@@ -1,12 +1,11 @@
 import React from "react";
 import "../styles/repos.css";
 import { useState, useEffect } from "react";
-
 import LoadingIcon from "../assets/images/Loading_icon.gif";
 import { Link } from "react-router-dom";
 
 import Profiles from "../components/Profile";
-import Pagination from "../components/Pagination";
+import Pagination from "../assets/images/extras/Pagination";
 import { Helmet } from "react-helmet";
 import { RepoDisplay } from "../components/RepoDisplay";
 
@@ -58,7 +57,7 @@ const Repositories = () => {
 
       <div className="repos-container">
         {loading ? (
-          <img src={LoadingIcon} alt="" />
+          <img src={LoadingIcon} alt="" className="loading" />
         ) : (
           <div>
             <h1 className="title">Ridwan Adebosin's GitHub Repositories</h1>
@@ -81,7 +80,7 @@ const Repositories = () => {
           disabledNext={page >= totalPages}
         />
       </div>
-      <Link to="/" className="btn">
+      <Link to="/" className="btn back_home_btn">
         Back to home
       </Link>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import "../styles/singlerepo.css";
 
 const SingleRepo = () => {
   const [repos, setRepos] = useState({});
@@ -26,7 +27,7 @@ const SingleRepo = () => {
   return loading ? (
     <div>Loading...</div>
   ) : (
-    <div className="home">
+    <div className="single_repo_home">
       <Helmet>
         <title>Repo Details</title>
         <meta
@@ -36,7 +37,7 @@ const SingleRepo = () => {
         <link rel="canonical" href="/error" />
       </Helmet>
 
-      <div className="home-cont home-cont-div">
+      <div className="home-cont-div">
         <h1 className="home--header">Repo Details</h1>
         <hr />
         <p>Repo Name: {repos.name} </p>

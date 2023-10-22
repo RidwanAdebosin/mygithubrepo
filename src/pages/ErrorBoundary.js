@@ -21,11 +21,11 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div>
-          <h1 className="error-header">Oops! Something went wrong!!!</h1>
+        <div className="error-boundary-container">
+          <h1 className="error-header">Ooopps! Something went wrong!!!</h1>
           <div className="error-btn">
-            <p>To Fix this Error, Kindly</p>
-            <Link to="/" className="reload reset btn">
+            <p>Kindly hit the button below to fix this problem</p>
+            <Link to="/" className="btn">
               Reset
             </Link>
             <p className="reload-p"> and</p>

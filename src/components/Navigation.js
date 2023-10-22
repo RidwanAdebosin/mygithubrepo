@@ -1,16 +1,28 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import Nav from "../assets/images/extras/ShortNav";
+import React, { useState } from "react";
 import "../styles/navigation.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navigation = () => {
+  const [shortenNav, setShortenNav] = useState(false);
+
+  const toggleNav = () => {
+    // console.log("showwww");
+    setShortenNav(true);
+  };
+
+  const closeNav = () => {
+    setShortenNav(false);
+  };
   return (
     <>
-      <section className="nav_bar">
+      <section className={` nav_bar ${shortenNav ? "show-nav-bar" : ""}`}>
         <ul>
-          <li>
+          <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "ash" } : { color: "black" }
+                isActive ? { color: "grey" } : { color: "black" }
               }
               className="navigate"
               to="/"
@@ -18,10 +30,10 @@ const Navigation = () => {
               Home Page
             </NavLink>
           </li>
-          <li>
+          <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "ash" } : { color: "black" }
+                isActive ? { color: "grey" } : { color: "black" }
               }
               className="navigate"
               to="/repos"
@@ -29,10 +41,10 @@ const Navigation = () => {
               Repositories Page
             </NavLink>
           </li>
-          <li>
+          <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "ash" } : { color: "black" }
+                isActive ? { color: "grey" } : { color: "black" }
               }
               className="navigate"
               to="/error404"
@@ -40,10 +52,10 @@ const Navigation = () => {
               Error404 Page
             </NavLink>
           </li>
-          <li>
+          <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "ash" } : { color: "black" }
+                isActive ? { color: "grey" } : { color: "black" }
               }
               className="navigate"
               to="/testerror"
@@ -52,7 +64,15 @@ const Navigation = () => {
             </NavLink>
           </li>
         </ul>
+
+        <div className="close-nav" onClick={closeNav}>
+          <FaTimes />
+        </div>
       </section>
+      <div className="shorten-nav" onClick={toggleNav}>
+        {/* <Nav /> */}
+        <FaBars />
+      </div>
     </>
   );
 };

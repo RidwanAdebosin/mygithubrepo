@@ -1,4 +1,4 @@
-.wrapper {
+.single_repo_home {
   border: 1px solid #dcc;
   border-radius: 5px;
   margin: 0 auto;
@@ -9,13 +9,8 @@
   background-color: rgb(226, 219, 219);
 }
 
-.error-container {
+.home-cont-div {
   margin-block-start: 100px;
   border-radius: 10px;
   background-color: #dcc;
-  margin-block-end: 70px;
-}
-
-.error-btn {
-  margin-block-start: 70px;
 }

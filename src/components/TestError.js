@@ -9,11 +9,16 @@ const TestError = () => {
   }
   return (
     <>
-      <div className="error-btn">
-        <button onClick={() => setError(true)} className="btn-error-boundary">
-          Test ErrorBoundary
-        </button>
-      </div>
+      <section className="error-boundary-container">
+        <div className="error-btn1">
+          <button
+            onClick={() => setError(true)}
+            className="btn-error-boundary1"
+          >
+            Test ErrorBoundary
+          </button>
+        </div>
+      </section>
     </>
   );
 };

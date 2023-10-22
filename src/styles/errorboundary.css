@@ -2,22 +2,39 @@
   border: 1px solid #dcc;
   border-radius: 5px;
   margin: 0 auto;
-  width: fit-content;
+  height: 100vh;
+  width: 100%;
   text-align: center;
   padding-bottom: 20px;
+  background-color: rgb(226, 219, 219);
 }
 
-.error-btn {
-  background-color: palevioletred;
+.error-btn1 {
+  margin-block-start: 250px;
+  background-color: rgb(72, 22, 39);
+  border: 1px solid;
+  height: 50vh;
 }
 
-.btn-error-boundary {
-  background-color: red;
-  color: white;
-  font-weight: 400;
-  margin-block-start: 100px;
-  text-align: center;
-  justify-content: center;
-  padding: 20px;
+.btn-error-boundary1 {
+  border: none;
   border-radius: 10px;
+  margin-block-start: 190px;
+  padding: 20px;
+}
+
+.btn-error-boundary1:hover {
+  padding: 30px 30px;
+  width: fit-content;
+  font-weight: 800;
+  border-radius: 10px;
+  color: rgb(72, 22, 39);
+}
+
+.btn:hover {
+  padding: 10px 20px;
+  width: fit-content;
+  font-weight: 200;
+  border-radius: 10px;
+  color: rgb(238, 232, 234);
 }
