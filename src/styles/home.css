@@ -19,7 +19,12 @@
 }
 
 .follow-btn {
+  font-size: 40px;
+}
+
+.follow-btn:hover {
   font-size: 50px;
+  transform: translateY(10px);
 }
 
 .follow-details {

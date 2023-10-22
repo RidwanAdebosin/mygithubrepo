@@ -19,15 +19,12 @@
 }
 
 .each_repo {
-  /* width: 50%; */
   display: grid;
-  /* border: 2px solid red; */
   grid-template-columns: 1fr 1fr;
 }
 
 .home {
   margin: auto;
-  /* width: 50%; */
   padding: 10px;
 }
 
@@ -35,7 +32,7 @@
   padding: 10px;
   background-color: #dcc;
   border-radius: 20px;
-  box-shadow: inset 0 -3em 3em rgb(241, 209, 209), 0 0 0 2px white,
+  box-shadow: inset 0 -2em 3em rgb(241, 209, 209), 0 0 0 2px white,
     0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
   margin-block-end: 30px;
 }

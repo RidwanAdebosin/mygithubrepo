@@ -12,12 +12,6 @@
   font-weight: 600;
 }
 
-/* .nav_bar li {
-  display: inline-flex;
-  margin-inline-end: 20px;
-  justify-content: space-between;
-} */
-
 .nav_bar ul {
   display: inline-flex;
   flex-wrap: wrap;
@@ -68,7 +62,7 @@
   .nav_bar {
     border-radius: 0;
     position: fixed;
-    width: 300px;
+    width: 250px;
     min-height: 100vh;
     background-color: rgb(167, 154, 154);
     border: none;
@@ -98,5 +92,13 @@
 
   .nav_bar ul li {
     margin-top: 20px;
+  }
+
+  .navigate:hover {
+    transform: translateY(2px);
+    border-radius: 20px;
+    color: rgb(73, 65, 65);
+    background-color: rgb(127, 122, 115);
+    padding: 10px 5px;
   }
 }

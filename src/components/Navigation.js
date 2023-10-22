@@ -8,7 +8,6 @@ const Navigation = () => {
   const [shortenNav, setShortenNav] = useState(false);
 
   const toggleNav = () => {
-  
     setShortenNav(true);
   };
 
@@ -22,7 +21,7 @@ const Navigation = () => {
           <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "grey" } : { color: "black" }
+                isActive ? { color: "brown" } : { color: "black" }
               }
               className="navigate"
               to="/"
@@ -33,7 +32,7 @@ const Navigation = () => {
           <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "grey" } : { color: "black" }
+                isActive ? { color: "brown" } : { color: "black" }
               }
               className="navigate"
               to="/repos"
@@ -44,7 +43,7 @@ const Navigation = () => {
           <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "grey" } : { color: "black" }
+                isActive ? { color: "brown" } : { color: "black" }
               }
               className="navigate"
               to="/error404"
@@ -55,7 +54,7 @@ const Navigation = () => {
           <li onClick={closeNav}>
             <NavLink
               style={({ isActive }) =>
-                isActive ? { color: "grey" } : { color: "black" }
+                isActive ? { color: "brown" } : { color: "black" }
               }
               className="navigate"
               to="/testerror"
