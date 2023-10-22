@@ -8,7 +8,7 @@ const Navigation = () => {
   const [shortenNav, setShortenNav] = useState(false);
 
   const toggleNav = () => {
-    // console.log("showwww");
+  
     setShortenNav(true);
   };
 
@@ -70,7 +70,6 @@ const Navigation = () => {
         </div>
       </section>
       <div className="shorten-nav" onClick={toggleNav}>
-        {/* <Nav /> */}
         <FaBars />
       </div>
     </>
