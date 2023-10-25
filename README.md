@@ -1,4 +1,4 @@
-###
+#
 
 This is a react project where i implemented an API fetch of my GitHub portfolio
 
@@ -24,4 +24,6 @@ It's a responsive design with hambuggers menu when opened on a smaller view port
 
 ###
 
-the GitHub logo standing alone in the home-page will take viewers to my profile
+The GitHub logo standing alone in the home-page will take viewers to my GitHub profile.
+
+You can check this project on Netlify by clicking [MyGitHubAPI](https://glowing-dasik-d65c6f.netlify.app/)

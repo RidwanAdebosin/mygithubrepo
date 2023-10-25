@@ -1,2 +1,2 @@
-//number of users to display per page
+//number of repos to display per page
 export const RepoDisplay = 4;

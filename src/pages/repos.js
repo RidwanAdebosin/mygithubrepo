@@ -3,7 +3,6 @@ import "../styles/repos.css";
 import { useState, useEffect } from "react";
 import LoadingIcon from "../assets/images/Loading_icon.gif";
 import { Link } from "react-router-dom";
-
 import Profiles from "../components/Profile";
 import Pagination from "../assets/images/extras/Pagination";
 import { Helmet } from "react-helmet";

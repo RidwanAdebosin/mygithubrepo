@@ -5,11 +5,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navigation = () => {
   const [shortenNav, setShortenNav] = useState(false);
-
+//creating a function for opening the nav on a smaller screen
   const toggleNav = () => {
     setShortenNav(true);
   };
-
+//creating a function for closing the nav on a smaller screen
   const closeNav = () => {
     setShortenNav(false);
   };
